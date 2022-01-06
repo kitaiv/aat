@@ -1,0 +1,19 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.admin-container{
+    height: 10em;
+    width: 50vh
+}
+
+.admin-container form{
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

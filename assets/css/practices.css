@@ -1,0 +1,33 @@
+section h1{
+    text-align: center;
+}
+section h5{
+    text-align: center;
+    font-weight: bold !important;
+    margin-bottom: 2rem
+}
+section{
+    margin: 2rem;
+    color: #00041a;
+    line-height: 2.2rem;
+}
+.custom-list-style {
+    list-style: '-  '
+}
+.base-text-wrapper{
+    margin-top: 2rem;
+    text-align: left;
+}
+.base-text-wrapper-line ul li{
+    list-style: none;
+}
+.base-text-wrapper-line ul li:before{
+    content: "-  "
+}
+.base-text-wrapper-cube ul li{
+    list-style-type: square;
+}
+
+.base-text-wrapper-cube ul li:before{
+    content: ""
+}

@@ -511,7 +511,12 @@ pre {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%; }
+  width: 100%;
+}
+
+.do-not-center{
+  justify-content: normal !important;
+}
 
 .row {
   display: -webkit-box;
@@ -522,8 +527,7 @@ pre {
   -ms-flex-wrap: wrap;
   justify-content: center;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+}
 
 .no-gutters {
   margin-right: 0;
@@ -3026,6 +3030,7 @@ tbody.collapse.show {
   font-weight: 500;
   color: #482ff7;
 }
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -3088,16 +3093,50 @@ tbody.collapse.show {
 }
 
 
+section{
+  margin: 2rem
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
+
+  .nav-logo{
+    width: 50%
+  }
+
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .nav-menu-container{
+    background-color: transparent !important;
+  }
+
+  section{
+    margin: 1rem 0 0 0
+  }
+
+  .nav-dropdown{
+    top: 10rem;
+    width: 100vh;
+  }
+
+  .nav-menu .nav-item-dropdown:hover > ul,
+  .nav-dropdown:hover {
+    visibility: hidden;
+    opacity: 1;
+    display: block;
+    z-index: 99;
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
     top: 11.5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #133750;
     width: 100%;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 999;
@@ -3106,8 +3145,9 @@ tbody.collapse.show {
     left: 0;
   }
 
+
   .nav-item {
-    margin: .8rem 0;
+    margin: .7rem 0;
   }
 
   .hamburger {
@@ -4829,9 +4869,6 @@ a.bg-navy:focus, a.bg-navy:hover {
 
 .bg-transparent {
   background-color: transparent !important; }
-
-.border {
-  border: 1px solid #e9ecef !important; }
 
 .border-0 {
   border: 0 !important; }

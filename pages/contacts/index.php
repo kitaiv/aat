@@ -1,19 +1,26 @@
 <?php include_once "../../header.php"; ?>
 
     <section class="pb_section" data-section="contact" id="section-contact">
-        <div class="container">
-
-            <div class="row justify-content-md-center text-center mb-5">
-                <div class="col-lg-7">
-                    <h2 class="mt-0 heading-border-top font-weight-normal">ПОСТАВТЕ ПИТАННЯ ЮРИСТУ
-                    </h2>
-                    <p>Заповніть форму та натисніть “Віправити”, щоб отримати детальну консультацію з Вашого питання!
-                    </p>
-                </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </symbol>
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </symbol>
+        </svg>
+        <div class="row justify-content-md-center text-center mb-5">
+            <div class="col-lg-7">
+                <h2 class="mt-0 heading-border-top font-weight-normal">ПОСТАВТЕ ПИТАННЯ ЮРИСТУ
+                </h2>
+                <p>Заповніть форму та натисніть "Відправити", щоб отримати зворотній зв’язок <br/>та консультацію з
+                    Вашого питання!
+                </p>
             </div>
-
+        </div>
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 pr-md-5 pr-sm-0 mb-4">
+                <div class="col-md-8 pr-sm-0 mb-4">
                     <form action="#"
                           id="contact-form"
                     >
@@ -25,7 +32,7 @@
                                             type="text"
                                             class="form-control p-3 rounded-0"
                                             id="name"
-                                            placeholder="Іван"
+                                            placeholder="John Doe"
                                             required
                                     >
                                 </div>
@@ -84,10 +91,10 @@
                             <span class="text-uppercase">Email</span>
                             <a style="color: #212529" href="mailto:diolawlviv@gmail.com">diolawlviv@gmail.com</a>
                         </li>
-                        <li>
-                            <span class="text-uppercase">Номер телефону</span>
-                            <a style="color: #212529" href="tel:+380674398979">+38 (067) 439 89 79</a>
-                        </li>
+<!--                        <li>-->
+<!--                            <span class="text-uppercase">Номер телефону</span>-->
+<!--                            <a style="color: #212529" href="tel:+380674398979">+38 (067) 439 89 79</a>-->
+<!--                        </li>-->
                         <li>
                             <span class="text-uppercase">Соціальні мережі</span>
                             <div style="display: flex; justify-items: baseline; justify-content: flex-start">
@@ -124,33 +131,23 @@
                             <span class="text-uppercase">Адреса</span>
                             <strong>вул. Політехнічна, 9</strong><br>
                             години роботи:<br/> <strong>понеділок-п'ятниця <br/>з 10:00 до 18:00</strong>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.4581385820634!2d24
-                        .012437015709118!3d49.83384867939499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
-                        .1!3m3!1m2!1s0x473add7bbfd2a3bd%3A0x83cd65948f992e50!2sPolitekhnichna%20St%2C%209%2C%20L&#39;
-                        viv%2C%20L&#39;vivs&#39;
-                        ka%20oblast%2C%2079000!5e0!3m2!1sen!2sua!4v1641391871912!5m2!1sen!2sua" width="600"
-                                    height="450" style="border:0; margin-top: 2rem" allowfullscreen=""
-                                    loading="lazy"></iframe>
+
                         </li>
                     </ul>
                 </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.4581385820634!2d24
+                        .012437015709118!3d49.83384867939499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+                        .1!3m3!1m2!1s0x473add7bbfd2a3bd%3A0x83cd65948f992e50!2sPolitekhnichna%20St%2C%209%2C%20L&#39;
+                        viv%2C%20L&#39;vivs&#39;
+                        ka%20oblast%2C%2079000!5e0!3m2!1sen!2sua!4v1641391871912!5m2!1sen!2sua"
+                        width="100%" height="450" style="border:0; margin-top: 2rem" allowfullscreen=""
+                        loading="lazy"></iframe>
             </div>
 
         </div>
 
+
     </section>
-    <!-- END section -->
-    <!-- jQuery -->
-    <script src="<?php $_SERVER[DOCUMENT_ROOT] ?>/aat/admin/adminPanel/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="<?php $_SERVER[DOCUMENT_ROOT] ?>/aat/admin/adminPanel/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- SweetAlert2 -->
-    <script src="<?php $_SERVER[DOCUMENT_ROOT] ?>/aat/admin/adminPanel/plugins/sweetalert2/sweetalert2.min.js"></script>
-    <!-- Toastr -->
-    <script src="<?php $_SERVER[DOCUMENT_ROOT] ?>/aat/admin/adminPanel/plugins/toastr/toastr.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="<?php $_SERVER[DOCUMENT_ROOT] ?>/aat/admin/adminPanel/dist/js/adminlte.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="<?php $_SERVER[DOCUMENT_ROOT] ?>/aat/admin/adminPanel/dist/js/demo.js"></script>
-    <script src="<?php $_SERVER[DOCUMENT_ROOT] ?>/aat/assets/js/contact-script.js" defer></script>
+    <script src="/assets/js/contact-script.js"></script>
+
 <?php include_once "../../footer.php"; ?>

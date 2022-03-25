@@ -13,7 +13,7 @@
 //?>
 
 <section class="pb_section pb_bg-half" data-section="practicing-areas" id="section-practicing-areas">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="text-center">
@@ -39,7 +39,7 @@
                                             <li><span style="font-weight: 400;">реєстрація філії іноземного банку в Україні</span></li>
                                             <li><span style="font-weight: 400;">реєстрація компаній з іноземною участю в Україні</span></li>
                                             <li><span style="font-weight: 400;">реєстрація іноземних інвестицій</span></li>
-                                            <li><span>реєстрація компанії у ДМС (ОВІР)</span></li>
+                                            <li><span style="font-weight: 400;">реєстрація компанії у ДМС (ОВІР)</span></li>
                                         </ul>
                                     </section>
                                     <hr>

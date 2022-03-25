@@ -1,28 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const formBtn = document.querySelector('#submit-btn')
+    function disapearMessage(id){
+        setTimeout(() => {
+            document.querySelector(`#${id}`).style.display = 'none'
+        }, 2000)
+    }
     formBtn.addEventListener('click', event => {
         event.preventDefault()
         const name = document.querySelector('#name').value,
             email = document.querySelector('#email').value,
             phone = document.querySelector('#phone').value,
             message = document.querySelector('#message').value;
-        var Toast = Swal.mixin({
-            toast: true,
-            position: 'top-end',
-            showConfirmButton: false,
-            timer: 3000
-        });
         if(name === "" || email === "" || phone === "" || message === ""){
             if(email.includes('@')){
-                Toast.fire({
-                    icon: 'warning',
-                    title: 'Деякі поля форми не заповнені, перевірте ще раз!'
-                })
+                alert('Неправильно введений e-mail!')
             }else{
-                Toast.fire({
-                    icon: 'warning',
-                    title: 'Email вказаний неправильно, спробуйте ще раз!'
-                })
+                alert('Неправильно введені дані, перевірте ще раз та спробуйте знову!')
             }
         }else{
             if(email.includes('@')){
@@ -41,20 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
                             phone.value = ""
                             message.value = ""
                             console.log(result)
-                            Toast.fire({
-                                icon: 'success',
-                                title: 'Ваше повідомлення було успішно відправлено!'
-                            })
                             spin.style.display = 'none';
                         }
+                        alert('Ваша заявка була успішно відправлена!')
 
                     })
                     .catch(err => console.log(err))
             }else{
-                Toast.fire({
-                    icon: 'warning',
-                    title: 'Email вказаний неправильно, спробуйте ще раз!'
-                })
             }
 
         }

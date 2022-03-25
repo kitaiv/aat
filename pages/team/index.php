@@ -1,9 +1,10 @@
 <? include_once "../../header.php"; ?>
 
-<section class="pb_section bg-light bg-image with-overlay" data-section="attorneys" id="section-attorneys" style="background-image: url(assets/images/1900x1200_img_2.jpg)">
-    <div class="container">
+<section class="pb_section bg-light bg-image with-overlay" data-section="attorneys" id="section-attorneys"
+         style="background-image: url(../../assets/images/1900x1200_img_2.jpg)">
+    <div class="container-fluid">
         <div class="row justify-content-md-center text-center mb-5">
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <h2 class="mt-0 heading-border-top light font-weight-normal text-white">Команда</h2>
             </div>
         </div>
@@ -18,7 +19,6 @@
                         <h6 class="mt-3"><a style="color: #212529" href="tel:+380674398979"><strong>+38(067)-439-89-79</strong></a></h6>
                         <div>
                             <ul class="custom-list-style" style="text-align: left">
-                                <li>Засновниця Адвокатського Об’єднання «ДІО»</li>
                                 <li>Понад 20 років адвокатської практики</li>
                                 <li>Досвід представлення інтересів клієнтів у справах адміністративної, господарської, цивільної спеціалізацій</li>
                                 <li>Представлення інтересів у судах усіх інстанцій</li>

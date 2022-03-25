@@ -13,7 +13,7 @@
 //?>
 
 <section class="pb_section pb_bg-half" data-section="practicing-areas" id="section-practicing-areas">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="text-center">
